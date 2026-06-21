@@ -26,28 +26,14 @@ Una herramienta diseñada para prospección comercial de nuevos clientes y prepa
 
 ---
 
-## 🧠 ¿Por qué este proyecto demuestra el Perfil Informática + ADE?
-
-* **La Capa de Tecnología (Informática):**
-  * Uso de **Python** y **Streamlit** para crear una UI fluida y profesional.
-  * Orquestación de LLMs con **LangChain** (estructuración de prompts, cadenas y control de temperaturas).
-  * Extracción de datos en tiempo real mediante web scraping/search en LangChain.
-  * **Structured Outputs** mediante modelos de datos en Pydantic.
-* **La Capa de Negocio (ADE):**
-  * Enfoque directo en la optimización de procesos (reducción de tiempos de selección y prospección comercial).
-  * Redacción comercial persuasiva alineada con necesidades reales de crecimiento corporativo.
-  * Comprensión de los cuellos de botella en RRHH y Desarrollo de Negocio.
-
----
-
 ## 🛠️ Instalación y Uso Local
 
 Sigue estos sencillos pasos para probar la aplicación en tu máquina local:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/tessera-ai-automation.git
-cd tessera-ai-automation
+git clone https://github.com/Bardavio/AI-Operations-Hub.git
+cd AI-Operations-Hub
 ```
 
 ### 2. Instalar las dependencias
