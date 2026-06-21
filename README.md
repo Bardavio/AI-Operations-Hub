@@ -1,4 +1,4 @@
-# Tessera AI Automation Hub 🛠️
+# AI Operations Hub (Tessera Business Automation) 🛠️
 
 Este repositorio contiene una demostración práctica de dos herramientas de **Inteligencia Artificial y Automatización** desarrolladas específicamente para resolver cuellos de botella reales en empresas de consultoría estratégica y de talento como **Tessera**.
 
