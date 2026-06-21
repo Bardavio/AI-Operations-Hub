@@ -28,40 +28,51 @@ Una herramienta diseñada para prospección comercial de nuevos clientes y prepa
 
 ## 🛠️ Instalación y Uso Local
 
-Sigue estos sencillos pasos para probar la aplicación en tu máquina local:
-
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/Bardavio/AI-Operations-Hub.git
 cd AI-Operations-Hub
 ```
 
-### 2. Instalar las dependencias
-Se recomienda utilizar un entorno virtual (venv):
-```bash
-python -m venv venv
-# En Windows:
-.\venv\Scripts\activate
-# En macOS/Linux:
-source venv/bin/activate
+### Método A: Ejecución con Docker (Recomendado y más rápido) 🐳
+Dado que la aplicación está completamente contenerizada, no necesitas configurar Python ni instalar dependencias directamente en tu sistema.
 
-pip install -r requirements.txt
-```
+1. **Configurar las API Keys:**
+   Abre el archivo `.env` en la raíz del proyecto e introduce tu OpenAI API Key:
+   ```bash
+   OPENAI_API_KEY=tu_clave_de_openai_aqui
+   ```
+2. **Levantar la aplicación:**
+   Ejecuta en tu terminal el siguiente comando:
+   ```bash
+   docker compose up --build -d
+   ```
+3. **Acceder a la aplicación:**
+   Abre tu navegador y entra en: **`http://localhost:8501`**
 
-### 3. Configurar las API Keys
-Duplica el archivo `.env.example`, renombralo como `.env` e introduce tus claves de API de OpenAI:
-```bash
-OPENAI_API_KEY=tu_clave_de_openai
-# Opcional: TAVILY_API_KEY=tu_clave_de_tavily
-```
-*Nota: Si prefieres no usar el archivo `.env`, puedes introducir tu **OpenAI API Key** directamente en la barra lateral de la aplicación web una vez levantada.*
+---
 
-### 4. Lanzar la aplicación
-```bash
-streamlit run app.py
-```
+### Método B: Ejecución en Local (Sin Docker) 🐍
+Si prefieres ejecutarlo de forma nativa en tu entorno de Python:
 
-La aplicación se abrirá automáticamente en tu navegador predeterminado (normalmente en `http://localhost:8501`).
+1. **Crear y activar entorno virtual:**
+   ```bash
+   python -m venv venv
+   # En Windows:
+   .\venv\Scripts\activate
+   # En macOS/Linux:
+   source venv/bin/activate
+   ```
+2. **Instalar dependencias:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Configurar las API Keys:**
+   Crea tu archivo `.env` o introduce la clave de OpenAI directamente en la interfaz gráfica de la aplicación una vez levantada.
+4. **Lanzar la aplicación:**
+   ```bash
+   streamlit run app.py
+   ```
 
 ---
 
